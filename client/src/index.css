@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌿 Base Styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F1EB;
+  color: #1C1C1C;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* 🎨 Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+}
+
+/* ✨ Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🧱 Reusable Components */
+@layer components {
+
+  /* Primary Button */
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2 rounded-full transition duration-300 hover:bg-accent;
+  }
+
+  /* Secondary Button */
+  .btn-secondary {
+    @apply border border-primary text-primary px-6 py-2 rounded-full transition duration-300 hover:bg-primary hover:text-white;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-28 px-6;
+  }
+
+  /* Container width */
+  .container-custom {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* Optional handwriting font */
+  .handwriting {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+/* 🌿 Image Styling */
+img {
+  border-radius: 12px;
+}
+
+/* ✨ Fade-in Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🎬 Hero zoom animation */
+@keyframes zoomIn {
+  0% { transform: scale(1.05); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1.05); }
+}
