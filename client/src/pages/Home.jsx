@@ -7,7 +7,7 @@ import CTA from "../components/CTA";
 
 const Home = () => {
   return (
-    <div className="bg-[#F5F1EB]">
+    <div className="bg-[#F5F1EB] min-h-screen pt-20 md:pt-24 px-4 md:px-6">
       <Navbar />
       <Hero />
       <StorySection />

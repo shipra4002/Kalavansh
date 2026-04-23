@@ -19,8 +19,8 @@ const Hero = () => {
         </p>
 
         <div className="mt-8 flex gap-4 justify-center">
-          <button className="btn-primary">Explore Stories</button>
-          <button className="btn-secondary border-white text-white hover:bg-white hover:text-navy">
+          <button className="btn-primary py-3 md:py-2 px-6">Explore KalaKathas</button>
+          <button className="btn-secondary border-white text-white hover:bg-white hover:text-navy py-3 md:py-2 px-6">
             Scan a Product
           </button>
         </div>
